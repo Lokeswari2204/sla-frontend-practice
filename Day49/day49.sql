@@ -51,7 +51,7 @@ select department, sum(mark) as total_marks from student group by department ord
 
 
 
---- Built function Date ---
+--- Built-In function Date ---
 create table events (id int primary key, event_name varchar(50), event_date date);
 insert into events values
 (1, 'Pongal Celebration', '2026-01-14'),
