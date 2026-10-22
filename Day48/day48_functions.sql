@@ -1,0 +1,94 @@
+select curdate();
+select CURRENT_DATE();
+select CURRENT_DATE() + 1;
+select curdate() + 1;
+select now();
+select ADDDATE("2004-12-01", Interval 4 year);
+select day(now());
+select year(now());
+select month(now());
+select week(now());
+select quarter(now());
+select yearweek(now());
+select weekofyear(curdate());
+select dayname(now());
+select dayofmonth(now());
+select dayofweek(now());
+select dayofyear(now());
+select sysdate();
+select Date_add('2026-01-01', INTERVAL 20 Day);
+select Date_add('2026-01-21', INTERVAL -20 Day);
+select Date_sub('2026-05-06', Interval 5 day);
+select Date_sub('2026-05-01', Interval -5 day);
+select DateDiff(curdate(), '2004-12-22') as result;
+select DateDiff(curdate(), '2003-08-26') as result;
+select Date_Format("2004-12-22", "%M %d %Y");
+select Date_Format(curdate(), "%M %d %Y");
+select Date_Format(curdate(), "%W %M %e %Y");
+select Date_format(curdate(), "%w %e %m %y");
+
+
+select abs(-110.34);
+select ceil(38.97);
+select ceiling(38.1);
+select floor(26.97);
+select floor(26.11);
+select 8 div 3;
+select exp(0);
+select Greatest(10,5,15,20,50,30);
+select greatest("microsoft.com", "w3", "apple");
+select least(3,12,34,2,19);
+select least("zbm", "ibm", "com");
+select Mod(18,4);
+select PI();
+select pow(4,3);
+select power(4,3);
+select rand();
+select rand()*10;
+select floor(rand()*10);
+select round(124.3843, 3);
+select round(124.3755, 2);
+select sqrt(25);
+select Truncate(135.3751, 2);
+select Truncate(135.3751, 0);
+select sin(90);  --- returns value in radian not degree
+select cos(90);
+select tan(90);
+
+
+select ascii('A');
+select ascii('a');
+select ascii(0);
+select char_length("Welcome to Chennai") as Lengthofstring;
+select character_length("Welcome to Chennai") as LengthOfString;
+select concat("Welcome ", "to ", "Puducherry ") as concatenatedString;
+select concat_ws("-","Welcome", "to", "Puducherry");
+select field("a", "s", "b", "a", "u");  --- returns the index position of the first letter (a)
+select field(10, 9,3,4,5,10,8);
+select find_in_set("q",  "m,y,s,q,l");
+select format(250500.5674, 2);
+select insert("W3Schools.com", 3, 7, "Example123");
+select instr("W3Schools.com", "S") as matchposition;
+select instr("W3Schools.com", "COM") as matchposition;
+select Lcase("WELCOME");
+select Lower("WELCOME");
+select Ucase("welcome");
+select Upper("welcome");
+select left("Mysql tutorial", 5);
+select right("Mysql tutorial", 8);
+select length("Mysql tutorial");
+select locate("T", "Mysql Tutorial.com");
+select position("T" in  "Mysql Tutorial.com");
+select mid("Mysql Tutorial", 1, 5);
+select replace("SQL Tutorial", "SQL", "React");
+select reverse("SQL Tutorial");
+select LPAD("MYSQL Tutorial", 50, " ");
+select RPAD("MYSQL Tutorial", 50, " ");
+select LTRIM("    Mysql Tutorial");
+select RTrim("      Mysql Tutorial         ");
+select trim("              Mysql tutorial          ");
+select strcmp("SQL", "SQL");
+select strcmp("SQL", "HTML"); --- str 1 > str 2 returns 1
+select strcmp("Html", "sql"); --- str 1 < str 2 returns -1
+select substr("SQL Tutorial", -5, 5);
+select substring("SQL Tutorial", 5,5);
